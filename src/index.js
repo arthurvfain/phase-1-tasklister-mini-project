@@ -25,7 +25,7 @@ function appendToDoOnDOM(toDoObj)
   deleteButton.addEventListener("click", (e) => e.target.parentElement.remove())
   li.appendChild(deleteButton)
   document.querySelector('#tasks').appendChild(li)
-  
+  document.querySelector('#create-task-form').reset();
 }
 
 
